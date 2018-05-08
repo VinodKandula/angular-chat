@@ -1,24 +1,33 @@
-# Angular-Pusher-Chat
+# Angular-Chat
+Emoji suggestions in an Angular application using sentiment analysis
 
-Emoji suggestions in an Angular chat application using sentiment analysis 
-
-## Getting Started
-
-1. Install the angular [https://cli.angular.io](CLI) by running `npm install -g @angular/cli`
-2. Clone the repo
-3. Install project dependencies by running `npm install`
-4. Start dev server `npm start`
+## Prerequisites
+- [Angular](https://angular.io)
+- [Express](https://expressjs.com/)
+- [Pusher](https://pusher.com)
+- [Sentiment](https://github.com/thisandagain/sentiment)
+- A [Pusher account](https://pusher.com/signup) and [Pusher app credentials](http://dashboard.pusher.com/)
 
 
-## How To
+## Getting started
+Clone the project and install dependencies:
+Create a file named `.env`. Update the `.env` file with the content below:
 
-- Get your pusher keys from your profile.
-- Create a file named .env and place your appId, keys and secret there.
-- Include your pusher key in the environment.ts file
+```
+PUSHER_APP_ID=your-app-id
+PUSHER_APP_KEY=your-app-key
+PUSHER_APP_SECRET=your-app-secret
+```
+
+> **Note**: ensure to replace the placeholder values with your pusher `appId`, `key` and `secret`.
+
+
+```
+git clone https://github.com/christiannwamba/angular-chat.git
+cd angular-chat && npm install && npm start
+```
 
 ## Built With
 
-* [Pusher](https://pusher.com/) - APIs to enable devs building realtime features
-* [Express](https://expressjs.com) - Fast, unopinionated, minimalist web framework for Node.js
-* [Angular](https://angular.io)
-* [Sentiment](https://github.com/thisandagain/sentiment) - Javascript library for performing sentiment analysis
+* [Pusher](https://pusher.com/) 
+* [Angular](http://angular.io)  
