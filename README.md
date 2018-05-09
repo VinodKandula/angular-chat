@@ -23,11 +23,12 @@ PUSHER_APP_SECRET=your-app-secret
 
 > **Note**: ensure to replace the placeholder values with your pusher `appId`, `key` and `secret`.
 
+- git clone https://github.com/christiannwamba/angular-chat.git
+- cd angular-chat 
+- Run npm install 
+- Start server by running `node server`
+- Run `ng serve` to start the Angular dev server 
 
-```
-git clone https://github.com/christiannwamba/angular-chat.git
-cd angular-chat && npm install && npm start
-```
 
 ## Built With
 
