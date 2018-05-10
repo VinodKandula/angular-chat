@@ -11,11 +11,15 @@ export class EmojiPanelComponent implements OnInit {
   @Input() showEmojis: boolean = false;
   @Output() onEmojiSelect: EventEmitter<string> = new EventEmitter();
 
-  emojiList = {
-    positive: ['😀', '😁', '😘', '😄'],
-    neutral: ['😐', '😑', '😶', '🤔'],
-    negative: ['😟', '🙁', '😢', '😞'],
+ emojiList = {
+    positive: [128512, 128513, 128536, 128516],
+    neutral: [128528, 128529, 128566, 129300],
+    negative: [128543, 128577, 128546, 128542],
   };
+
+  codePoint(emojiCodePoint) {
+    return String.fromCodePoint(emojiCodePoint);
+  }
 
   onClick(reaction, index) {
     const emoji = this.emojiList[reaction][index];
