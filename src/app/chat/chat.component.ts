@@ -47,7 +47,8 @@ export class ChatComponent implements OnInit {
   }
 
   selectEmoji(e) {
-    this.message += ` ${e}`;
+    const emoji = String.fromCodePoint(e);
+    this.message += ` ${emoji}`;
     this.showEmojis = false;
   }
 
