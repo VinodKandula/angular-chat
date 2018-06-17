@@ -1,6 +1,8 @@
 # Angular-Chat
 Emoji suggestions in an Angular application using sentiment analysis
 
+[View tutorial](https://pusher.com/tutorials/angular-chat-sentiment-analysis)
+
 ## Prerequisites
 - [Angular](https://angular.io)
 - [Express](https://expressjs.com/)
